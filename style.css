@@ -25,6 +25,12 @@ body{
     /* display: none; */
 }
 
+#checkdate img{
+    position: absolute;
+    left: 470px;
+    display: none;
+}
+
 #countdown{
 	width: 465px;
 	height: 150px;
@@ -442,3 +448,20 @@ i.fa-solid{
 }
 
 /* reponsive */
+@media only screen and (min-width: 1025px) {
+    .tablet, .sp {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width: 641px) {
+    .sp, .pc {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .pc, .tablet {
+        display: none;
+    }
+}
