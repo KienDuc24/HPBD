@@ -13,6 +13,20 @@
 
 </head>
 <body>
+    <!-- CHECKDATE -->
+    <div id="checkdate">
+        <div id="countdown">
+            <div id='tiles'></div>
+            <div class="labels">
+              <li>Days</li>
+              <li>Hours</li>
+              <li>Mins</li>
+              <li>Secs</li>
+            </div>
+          </div>
+    </div>
+
+    <!-- MAIN -->
     <div class="fullscreen">
         <!-- <img class="Effect" src="./img/png-clipart-computer-icons-call-icon-cdr-text.png" title="Effect">
         <img class="Clap" src="./img/png-clipart-computer-icons-call-icon-cdr-text.png" title="Clap"> -->
@@ -23,16 +37,15 @@
             <div class="left col-5">
                 <img class="BD_text" src="./img/text.png" alt="">
                 <div class="icon">
-                    <i class=" effect button fa-solid fa-message fs-1"></i>
-                    <i class=" effect button fa-solid fa-image fs-1"> </i>
+                    <i class="col-2 effect_btn button icon fa-solid fa-message fs-1"></i>
+                    <i class="col-2 effect_btn button icon fa-solid fa-image fs-1"> </i>
                 </div>
             </div>
-            <div class="right col-4">
-                
+            <div class="right col-7">
             </div>
         </div>
-        <img class="ChangeM" src="./img/changeM.gif" title="ChangeM" onclick="music()">
-        <!-- <img class="ChangeBG" src="./img/png-clipart-computer-icons-call-icon-cdr-text.png" title="ChangeBG" > -->
+        <img class="ChangeM" src="./img/changeM.gif" title="Music" onclick="music()">
+        <img class="Effect" src="./img/Effect.gif" title="Effect" onclick="Effect()" >
         <audio id ="hpbd_audio" src="./audio/Happy-Birthday-nhieu-thu-tieng-Dang-cap-nhat.mp3"></audio>
     </div>
 
