@@ -25,16 +25,15 @@ img{
 }
 
 .ChangeBG{
-    top: 99%;
-    left: 0.5%;
-    transform: translateY(-100%);
-}
-
-.ChangeM{
     top: 99%;  
     left: 99.5%;  
     transform: translate(-100%,-100%);
+}
 
+.ChangeM{
+    top: 99%;
+    left: 0.5%;
+    transform: translateY(-100%);
 }
 
 .header{
@@ -72,10 +71,6 @@ div.icon{
     text-align: center;
 }
 
-.left .main_button{
-
-}
-
 .right{
     height: 100%;
     width: 60%;
@@ -83,3 +78,62 @@ div.icon{
     border-start-end-radius: 16px;
 }
 
+  
+
+.button {
+    all: unset;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50px;
+    padding: 16px 24px;
+    background-color: #f0f7fa;
+    box-shadow: 
+      inset 0 -4px 8px #87bfd8,
+      0 4px 6px rgba(#000, .2);
+    cursor: pointer;
+    color: #0470e3;
+    transition: transform .4s cubic-bezier(.55, 1, .15, 1);
+    will-change: transform;
+    
+    &:active {
+      transform: scale(.92);
+      
+      &::after {
+        opacity: 1;
+      }
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-image-source: url('https://assets.codepen.io/4175254/mario-button-borders.png');
+      border-image-slice: 50%;
+      border-image-width: 40px;
+      border-style: solid;
+      transform: scale(1.04, 1.08);
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: .4s;
+      transition-timing-function: cubic-bezier(.55, 1, .15, 1);
+      will-change: transform;
+    }
+    
+    &:focus-visible::after {
+      opacity: 1;
+      animation: pulsate 1s infinite;
+    }
+  }
+  
+  @keyframes pulsate {
+    0% {
+      transform: scale(1.04, 1.08);
+    }
+    50% {
+      transform: scale(1.08, 1.12);
+    }
+    100% {
+      transform: scale(1.04, 1.08);
+    }
+}
