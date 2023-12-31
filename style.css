@@ -215,6 +215,15 @@ img{
 .header{
     text-align: center;
     line-height: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name{
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: #b45659;
 }
 
 .main{
@@ -348,12 +357,22 @@ i.fa-solid{
     position: relative;
 }
 
-font-face {
-    /*font from https://codepen.io/Nimoi/pen/keaFn*/
-    font-family: 'Monoton';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Monoton'), local('Monoton-Regular'), url(https://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
-  }
-  
-  
+.content{
+    width: 100%;
+    height: 100%;
+    background-color:#0470e3;
+    position: absolute;
+    border-end-end-radius: 16px;
+    border-start-end-radius: 16px;
+}
+
+#message{
+    /* display: none; */
+}
+
+#img{
+    display: none;
+}
+
+
+/* reponsive */

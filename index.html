@@ -6,6 +6,7 @@
     <title>test</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/logo.png" type = "image/x-icon">   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
@@ -32,7 +33,7 @@
         <!-- <img class="Effect" src="./img/png-clipart-computer-icons-call-icon-cdr-text.png" title="Effect">
         <img class="Clap" src="./img/png-clipart-computer-icons-call-icon-cdr-text.png" title="Clap"> -->
         <div class="header">
-            <p class="name fs-2">Nguyễn Khánh Linh</p>
+            <p class="name fs-2">Dear Nguyễn Khánh Linh</p>
         </div>
         <canvas id="c"></canvas>
 
@@ -40,11 +41,19 @@
             <div class="left col-5">
                 <img class="BD_text" src="./img/text.png" alt="">
                 <div class="icon">
-                    <i class="col-2 effect_btn button icon fa-solid fa-message fs-1"></i>
-                    <i class="col-2 effect_btn button icon fa-solid fa-image fs-1"> </i>
+                    <button type="button"  class="effect_btn button" onclick="Message()">
+                        <i id="message_btn" class="fa-solid fa-message fs-1"></i>
+                    </button>
+                    <button type="button"  class="effect_btn button" onclick="Img()">
+                        <i id="img_btn" class="fa-solid fa-image fs-1"></i>
+                    </button>
                 </div>
             </div>
             <div class="right col-7">
+                <div id="message" class="content"> 
+                    <p>Hey bro,</p>
+                </div>
+                <div id="img" class="content"> <img src="./img/049ab38c36c73bc226e2e948d95b392b.jpg" alt=""></div>
             </div>
         </div>
         <img class="ChangeM" src="./img/changeM.gif" title="Music" onclick="Music()">

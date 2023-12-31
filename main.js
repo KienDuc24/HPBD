@@ -1,3 +1,4 @@
+//COUNTDOWN
 const target_date = new Date(2024, 0, 27); // Tháng trong JavaScript bắt đầu từ 0 (0 = Tháng 1)
  // set the countdown date
 var days, hours, minutes, seconds; // variables for time units
@@ -36,6 +37,7 @@ function pad(n) {
 }
 
 
+//FUNCTION
 function Checkdate(){
     document.getElementById('checkdate').style.display = "none";
 }
@@ -74,7 +76,7 @@ function Balloon() {
   this.y = ch + 2 * this.r;
   this.a = this.r * 4.5;
   this.pm = Math.random() < 0.5 ? -1 : 1;
-  this.speed = randomIntFromInterval(1.5, 4);
+  this.speed = randomIntFromInterval(2, 6);
   this.k = this.speed / 5;
   this.hue = this.pm > 0 ? "210" : "10";
 }
@@ -97,7 +99,7 @@ function Init() {
     requestId = null;
   }
   cw = c.width = bc.width = window.innerWidth*0.995, cx = cw / 2;
-  ch = c.height = bc.height = window.innerHeight*0.88, cy = ch;
+  ch = c.height = bc.height = window.innerHeight*0.99, cy = ch;
   bCtx.strokeStyle = "#abcdef";
   bCtx.lineWidth = 1;
   Draw();
@@ -239,3 +241,12 @@ function randomIntFromInterval(mn, mx) {
   return ~~(Math.random() * (mx - mn + 1) + mn);
 }
 }    
+
+function Message(){
+
+}
+
+function Img(){
+
+}
+//DEF
