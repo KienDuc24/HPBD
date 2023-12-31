@@ -12,7 +12,7 @@ body{
 }
 
 img{
-    width: 7%;
+    width: 10%;
     position: absolute;
     top: 1%;
     left: 0.5%;
@@ -47,7 +47,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ffffff;
+    background-color: #F3DBCE;
     border-radius: 16px;
     box-shadow: 0px 7px  rgb(117, 114, 114);
     border: 1px #6d6875 solid ;
@@ -59,7 +59,6 @@ img{
     background-color: #E5989B;
     border-start-start-radius: 16px;
     border-end-start-radius: 16px;
-
 }
 
 .BD_text{
@@ -71,23 +70,15 @@ div.icon{
     text-align: center;
 }
 
-.right{
-    height: 100%;
-    width: 60%;
-    border-end-end-radius: 16px;
-    border-start-end-radius: 16px;
-}
-
-  
-
 .button {
     all: unset;
     justify-content: center;
     align-items: center;
     position: relative;
     border-radius: 50px;
-    padding: 16px 24px;
-    background-color: #f0f7fa;
+    padding: 5% 12%;
+    margin: 3%;
+    background-color: #F3DBCE;
     box-shadow: 
       inset 0 -4px 8px #87bfd8,
       0 4px 6px rgba(#000, .2);
@@ -136,4 +127,30 @@ div.icon{
     100% {
       transform: scale(1.04, 1.08);
     }
+}
+
+@keyframes pulse-grow {
+	to {
+		transform: scale(1.1);
+	}
+}
+
+.effect{
+	display: inline-block;
+
+	&:hover {
+		animation-name: pulse-grow;
+		animation-duration: .3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+}
+
+/* right */
+.right{
+    height: 100%;
+    width: 60%;
+    border-end-end-radius: 16px;
+    border-start-end-radius: 16px;
 }
