@@ -475,7 +475,11 @@ i.fa-solid{
     .phone_content p{
         margin-bottom: 3%;
     }
+    .sign{
+        display: none;
+    }
 }
+
 
 @media only screen and (max-width: 800px) {
     .phone_header{
@@ -488,5 +492,8 @@ i.fa-solid{
     }
     .phone_content p{
         margin-bottom: 3%;
+    }
+    .sign{
+        display: none;
     }
 }
