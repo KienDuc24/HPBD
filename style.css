@@ -367,10 +367,10 @@ i.fa-solid{
 }
 
 #message{
-    /* display: none; */
+    display: none;
 }
 
-#img{
+#image{
     display: none;
 }
 

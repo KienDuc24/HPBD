@@ -242,11 +242,32 @@ function randomIntFromInterval(mn, mx) {
 }
 }    
 
-function Message(){
-
+let count_message = 1;
+let count_image = 1;
+function Message() {
+  count_message++;
+  if (count_message % 2 !== 1) {
+    document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-xmark fs-1'></i> ";
+    document.getElementById("message").style.display = "block";
+    document.getElementById("image").style.display = "none";   
+    document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-1'></i> ";
+  } else {
+    document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-1'></i> ";
+    document.getElementById("message").style.display = "none";
+  }
 }
 
-function Img(){
 
+function Img(){
+    count_image++;
+    if (count_image % 2 !== 1) {
+      document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-xmark fs-1'></i> ";
+      document.getElementById("image").style.display = "block";
+      document.getElementById("message").style.display = "none";  
+      document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-1'></i> "; 
+    } else {
+      document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-1'></i> ";
+      document.getElementById("image").style.display = "none";
+    }
 }
 //DEF
