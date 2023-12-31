@@ -30,10 +30,10 @@ function getCountdown(){
 
 	// format countdown string + set tag value
 	countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+        document.getElementById('Checkdate_btn').style.display = "block";
 
     if(seconds_left==0){
         document.getElementById('clock').style.display = "block";
-        document.getElementById('Checkdate_btn').style.display = "block";
     }
 
 }
