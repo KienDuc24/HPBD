@@ -250,11 +250,11 @@ function Message() {
     document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-xmark fs-1'></i> ";
     document.getElementById("message").style.display = "block";
     document.getElementById("image").style.display = "none";   
-    document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-1'></i> ";
+    document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-3'></i> ";
     if(count_image %2 !==1)
         count_image++;
   } else {
-    document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-1'></i> ";
+    document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-3'></i> ";
     document.getElementById("message").style.display = "none";
   }
 }
@@ -266,11 +266,11 @@ function Img(){
       document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-xmark fs-1'></i> ";
       document.getElementById("image").style.display = "block";
       document.getElementById("message").style.display = "none";  
-      document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-1'></i> "; 
+      document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-3'></i> "; 
       if(count_message %2 !==1)
         count_message++;
     } else {
-      document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-1'></i> ";
+      document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-3'></i> ";
       document.getElementById("image").style.display = "none";
     }
 }

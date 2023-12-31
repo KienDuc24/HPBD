@@ -374,5 +374,8 @@ i.fa-solid{
     display: none;
 }
 
+.message_content{
+    margin: 3%;
+}
 
 /* reponsive */
