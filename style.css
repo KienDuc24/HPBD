@@ -22,7 +22,7 @@ body{
     background-image: url(./img/waiting.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    display: none;
+    /* display: none; */
 }
 
 #countdown{
@@ -357,25 +357,88 @@ i.fa-solid{
     position: relative;
 }
 
-.content{
-    width: 100%;
-    height: 100%;
-    background-color:#0470e3;
-    position: absolute;
-    border-end-end-radius: 16px;
-    border-start-end-radius: 16px;
-}
+
 
 #message{
     display: none;
 }
 
-#image{
+#image { 
     display: none;
 }
 
+#image img{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    border-radius: 16px;
+    justify-content: center;
+    display: block;
+}
+
 .message_content{
-    margin: 3%;
+    margin: 3% 5%;
+}
+
+.scale-up-hor-left {
+    -webkit-animation: scale-up-hor-left 0.5s ease-in;
+    animation: scale-up-hor-left 0.5s ease-in;
+  }
+  
+  @-webkit-keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleY(0.4);
+      transform: scaleY(0.4);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+  }
+  
+  @keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleY(0.4);
+      transform: scaleY(0.4);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+    }
+  }
+
+  .sign p{
+    margin-bottom: 0;
+  }
+
+  .sign img{
+    position: relative;
+  }
+
+  
+.image_content{
+    width: 100%;
+    height: 100%;
+    border-end-end-radius: 16px;
+    border-start-end-radius: 16px;
+}
+
+.image_content i{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-120%, -120%);
 }
 
 /* reponsive */

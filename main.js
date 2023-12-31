@@ -27,7 +27,7 @@ function getCountdown(){
 	// format countdown string + set tag value
 	countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
 
-    if(seconds_left==0)
+    // if(seconds_left==0)
         document.getElementById('Checkdate_btn').style.display = "block";
 
 }
