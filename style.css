@@ -214,6 +214,7 @@ img{
 
 .header{
     text-align: center;
+    line-height: 2;
 }
 
 .main{
@@ -344,4 +345,15 @@ i.fa-solid{
     width: 60%;
     border-end-end-radius: 16px;
     border-start-end-radius: 16px;
+    position: relative;
 }
+
+font-face {
+    /*font from https://codepen.io/Nimoi/pen/keaFn*/
+    font-family: 'Monoton';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Monoton'), local('Monoton-Regular'), url(https://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+  }
+  
+  
