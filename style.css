@@ -229,7 +229,7 @@ img{
 .name{
     font-style: italic;
     font-weight: bolder;
-    text-shadow: #b45659;
+    font-size: 40px;
 }
 
 .main{
@@ -363,8 +363,6 @@ i.fa-solid{
     position: relative;
 }
 
-
-
 #message{
     display: none;
 }
@@ -448,20 +446,16 @@ i.fa-solid{
 }
 
 /* reponsive */
-@media only screen and (min-width: 1025px) {
-    .tablet, .sp {
-        display: none;
+@media only screen and (max-width: 800px) {
+    .phone_header{
+        font-size: 20px !important;
     }
-}
 
-@media only screen and (max-width:1024px) and (min-width: 641px) {
-    .sp, .pc {
-        display: none;
+    .phone_content{
+        font-size: 10px;
+        line-height: 1;
     }
-}
-
-@media only screen and (max-width: 640px) {
-    .pc, .tablet {
-        display: none;
+    .phone_content p{
+        margin-bottom: 3%;
     }
 }
