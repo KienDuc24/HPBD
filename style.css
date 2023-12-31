@@ -22,7 +22,7 @@ body{
     background-image: url(./img/waiting.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    /* display: none; */
+    display: none;
 }
 
 #countdown{
