@@ -25,6 +25,10 @@ function getCountdown(){
 
 	// format countdown string + set tag value
 	countdown.innerHTML = "<span>" + days + "</span><span>" + hours + "</span><span>" + minutes + "</span><span>" + seconds + "</span>"; 
+
+    if(seconds_left==0)
+        document.getElementById('Checkdate_btn').style.display = "block";
+
 }
 
 function pad(n) {
@@ -33,15 +37,8 @@ function pad(n) {
 
 
 function Checkdate(){
-    const currentDate = new Date();
-    const targetDate = new Date(2024, 0, 27);
-    
-    if (currentDate.getFullYear() === targetDate.getFullYear() && currentDate.getMonth() === targetDate.getMonth() && currentDate.getDate() === targetDate.getDate()) {
-        document.getElementsById('body').style.display ="none"
-    } else 
-        document.getElementsById('body').style.display ="block"  
+    document.getElementById('checkdate').style.display = "none";
 }
-
 
 function Music(){
     document.getElementById("hpbd_audio").play();
