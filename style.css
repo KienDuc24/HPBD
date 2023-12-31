@@ -446,6 +446,37 @@ i.fa-solid{
 }
 
 /* reponsive */
+@media only screen and (max-width: 640px) {
+    .phone_header{
+        font-size: 20px !important;
+    }
+
+    .phone_content{
+        font-size: 10px;
+        line-height: 1;
+    }
+    .phone_content p{
+        margin-bottom: 3%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+}
+
+@media only screen and (max-width:1024px) and (min-width: 641px) {
+    .phone_header{
+        font-size: 25px !important;
+    }
+
+    .phone_content{
+        font-size: 13px;
+        line-height: 1;
+    }
+    .phone_content p{
+        margin-bottom: 3%;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .phone_header{
         font-size: 20px !important;
