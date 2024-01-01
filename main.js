@@ -34,7 +34,6 @@ function getCountdown(){
 
     if(seconds_left==0){
       document.getElementById('Checkdate_btn').style.display = "block";
-      document.getElementById('clock').style.display = "block";
     }
 
 }
