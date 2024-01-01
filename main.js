@@ -1,6 +1,6 @@
 //COUNTDOWN
-// const target_date = new Date(2024, 0, 0,22,17); 
-const target_date = new Date(2024, 0, 27); 
+const target_date = new Date(2024, 0, 0,22,17); 
+// const target_date = new Date(2024, 0, 27); 
 // set the countdown date
 var days, hours, minutes, seconds; // variables for time units
 
