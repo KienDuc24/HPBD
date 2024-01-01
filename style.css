@@ -369,12 +369,20 @@ i.fa-solid{
     position: relative;
 }
 
+.right p{
+  font-weight: 600;
+}
+
+.right p:first-child{
+  font-weight: 1000;
+}
+
 #message{
-    display: none;
+  display: none;
 }
 
 #image { 
-    display: none;
+  display: none;
 }
 
 #image img{ 
@@ -499,11 +507,10 @@ i.fa-solid{
 @media only screen and (min-width: 1025px) {
 }
 
-@media only screen and (max-width:1024px) and (min-width: 641px) {
+@media only screen and (max-width:1024px) and (min-width: 800px) {
     .phone_header{
         font-size: 25px !important;
     }
-
     .phone_content{
         font-size: 13px;
         line-height: 1;
@@ -517,11 +524,10 @@ i.fa-solid{
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 641px) {
     .phone_header{
         font-size: 20px !important;
     }
-
     .phone_content{
         font-size: 10px;
         line-height: 1;
