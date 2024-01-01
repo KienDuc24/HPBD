@@ -33,8 +33,8 @@ function getCountdown(){
        
         document.getElementById('Checkdate_btn').style.display = "block";
         document.getElementById('clock').style.display = "block";
-
     if(seconds_left==0){
+
     }
 
 }
@@ -51,6 +51,40 @@ function Checkdate(){
 
 function Music(){
     document.getElementById("hpbd_audio").play();
+}
+
+
+let count_message = 1;
+let count_image = 1;
+function Message() {
+  count_message++;
+  if (count_message % 2 !== 1) {
+    document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-xmark fs-1'></i> ";
+    document.getElementById("message").style.display = "block";
+    document.getElementById("image").style.display = "none";   
+    document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-3'></i> ";
+    if(count_image %2 !==1)
+        count_image++;
+  } else {
+    document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-3'></i> ";
+    document.getElementById("message").style.display = "none";
+  }
+}
+
+
+function Img(){
+    count_image++;
+    if (count_image % 2 !== 1) {
+      document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-xmark fs-1'></i> ";
+      document.getElementById("image").style.display = "block";
+      document.getElementById("message").style.display = "none";  
+      document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-3'></i> "; 
+      if(count_message %2 !==1)
+        count_message++;
+    } else {
+      document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-3'></i> ";
+      document.getElementById("image").style.display = "none";
+    }
 }
 
 function Effect(){
@@ -248,37 +282,3 @@ function randomIntFromInterval(mn, mx) {
   return ~~(Math.random() * (mx - mn + 1) + mn);
 }
 }    
-
-let count_message = 1;
-let count_image = 1;
-function Message() {
-  count_message++;
-  if (count_message % 2 !== 1) {
-    document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-xmark fs-1'></i> ";
-    document.getElementById("message").style.display = "block";
-    document.getElementById("image").style.display = "none";   
-    document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-3'></i> ";
-    if(count_image %2 !==1)
-        count_image++;
-  } else {
-    document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-3'></i> ";
-    document.getElementById("message").style.display = "none";
-  }
-}
-
-
-function Img(){
-    count_image++;
-    if (count_image % 2 !== 1) {
-      document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-xmark fs-1'></i> ";
-      document.getElementById("image").style.display = "block";
-      document.getElementById("message").style.display = "none";  
-      document.getElementById("message_change").innerHTML = "<i class='fa-solid fa-message fs-3'></i> "; 
-      if(count_message %2 !==1)
-        count_message++;
-    } else {
-      document.getElementById("image_change").innerHTML = "<i class='fa-solid fa-image fs-3'></i> ";
-      document.getElementById("image").style.display = "none";
-    }
-}
-//DEF
