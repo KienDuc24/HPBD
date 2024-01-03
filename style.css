@@ -13,6 +13,14 @@
   letter-spacing: 4px;
 }
 
+.right p{
+  font-weight: 600;
+  word-spacing: 2px;
+}
+
+.right p:first-child{
+  font-weight: 1000;
+}
 
 body{
     padding: 0;
@@ -383,15 +391,6 @@ i.fa-solid{
     opacity: 0.8;
 }
 
-.right p{
-  font-weight: 600;
-  word-spacing: 2px;
-}
-
-.right p:first-child{
-  font-weight: 1000;
-}
-
 #message{
   display: none;
 }
@@ -522,7 +521,7 @@ i.fa-solid{
 @media only screen and (min-width: 1025px) {
 }
 
-@media only screen and (max-width:1024px) and (min-width: 800px) {
+@media only screen and (max-width:1024px) and (min-width: 641px) {
     .phone_header{
         font-size: 25px !important;
     }
@@ -539,7 +538,7 @@ i.fa-solid{
 }
 
 
-@media only screen and (max-width: 641px) {
+@media only screen and (max-width: 800px) {
     .phone_header{
         font-size: 20px !important;
     }
